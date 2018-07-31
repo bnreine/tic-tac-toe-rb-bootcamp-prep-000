@@ -119,7 +119,9 @@ def play(board)
     turn(board)
   end
   
-  if won?(board)
+  if won?(board) && winner(board)=="O"
+    "Congratulations O!"
+  elsif   
     
   elsif draw?(board)
     
