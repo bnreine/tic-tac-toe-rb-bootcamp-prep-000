@@ -121,9 +121,10 @@ def play(board)
   
   if won?(board) && winner(board)=="O"
     "Congratulations O!"
-  elsif   
-    
-  elsif draw?(board)
+  elsif won?(board) && winner(board)=="X"
+    "Congratulations X!"  
+  else
+    ""
     
   end
 
