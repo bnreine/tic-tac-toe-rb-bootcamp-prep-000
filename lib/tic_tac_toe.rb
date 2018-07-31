@@ -115,6 +115,10 @@ def turn(board)
 end
 
 def play(board)
+  turn(board)
+  turn(board)
+  turn(board)
+  
   until over?(board)
     turn(board)
   end
@@ -125,7 +129,6 @@ def play(board)
     puts "Congratulations X!"  
   else
     puts "Cat's Game!"
-    
   end
 
 end
